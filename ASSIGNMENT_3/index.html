@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Arithmetic Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Simple Arithmetic Application</h1>
+    </header>
+
+    <section>
+        <div class="row2">
+            <input type="number" id="num1" class="num_disp" placeholder="Num 1">
+            <input type="text" id="symbol" class="num_disp" disabled>
+            <input type="number" id="num2" class="num_disp" placeholder="Num 2">
+        </div>
+
+        <div class="row2">
+            <button id="btn_add" class="btn">Add</button>
+            <button id="btn_sub" class="btn">Subtract</button>
+            <button id="btn_mul" class="btn">Multiply</button>
+            <button id="btn_div" class="btn">Divide</button>
+        </div>
+
+        <div class="row3">
+            <button id="btn_res" class="btn">Show Result</button>
+            <input type="text" id="result" class="num_disp" disabled>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 Simple Arithmetic Application</p>
+    </footer>
+
+    <script src="scripts.js" type="module"></script>
+</body>
+</html>
