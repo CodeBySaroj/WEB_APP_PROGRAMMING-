@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f3f4f6;
+    min-height: 100vh;
+    display: grid;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    grid-template-areas: 
+        "header header"
+        "section aside"
+        "output output"
+        "footer footer";
+    
+    grid-template-columns: 1fr 1fr;
+}
+
+main { display: contents; }
+
+/* header */
+header {
+    grid-area: header;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+header h1 { color: #1f2937; }
+header p { color: #6b7280; margin-top: 5px; }
+
+/* sections */
+section, aside, .section_output {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+section { grid-area: section; }
+aside { grid-area: aside; }
+.section_output { grid-area: output; }
+
+/* forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input {
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+/* buttons */
+button {
+    padding: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #2563eb;
+    color: white;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+/* cards */
+.show_data {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.border {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 1rem;
+    min-width: 260px;
+    flex: 1;
+}
+
+.border h3 {
+    color: #2563eb;
+    margin-bottom: 0.5rem;
+}
+
+/* description */
+.details dt {
+    font-weight: 600;
+    color: #374151;
+}
+
+.details dd {
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* empty text */
+.empty {
+    color: #9ca3af;
+}
+
+/* footer */
+footer {
+    grid-area: footer;
+    text-align: center;
+    color: #6b7280;
+}
+
+/* responsive */
+@media (max-width: 700px) {
+    body {
+        grid-template-areas: 
+            "header"
+            "section"
+            "aside"
+            "output"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record Storage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Student Record Management</h1>
+        <p>Local Storage Demonstration</p>
+    </header>
+    
+    <main>
+        <!-- Entry -->
+        <section>
+            <h2>Enter Student Details</h2>
+            <form id="entryform">
+                <label for="name">Full Name</label>
+                <input type="text" placeholder="e.g. Ram Sharma" id="name" required>
+
+                <label for="roll">Roll Number</label>
+                <input type="number" placeholder="e.g. 12" id="roll" required>
+
+                <label for="address">Address</label>
+                <input type="text" placeholder="e.g. Kathmandu" id="address" required>
+
+                <button type="button" class="btn_submit">Save Record</button>
+            </form>
+        </section>
+
+        <!-- Transcript -->
+        <aside id="transcript">
+            <h2>Latest Submission</h2>
+            <p class="empty">No submissions yet.</p>
+        </aside>
+
+        <!-- Output -->
+        <section class="section_output">
+            <h2>Stored Records</h2>
+            <button class="btn_output">Load All Records</button>
+
+            <div class="show_data" id="show_data"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 | Student Storage System</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
