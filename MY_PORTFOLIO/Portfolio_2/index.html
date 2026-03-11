@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saroj Yadav — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========== CURSOR ========== -->
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-dot"></span>Saroj Yadav
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about"    class="nav-link">About</a></li>
+        <li><a href="#skills"   class="nav-link">Skills</a></li>
+        <li><a href="#tools"    class="nav-link">Tools</a></li>
+        <li><a href="#trading"  class="nav-link">Trading</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact"  class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul>
+      <li><a href="#about"    class="drawer-link">About</a></li>
+      <li><a href="#skills"   class="drawer-link">Skills</a></li>
+      <li><a href="#tools"    class="drawer-link">Tools</a></li>
+      <li><a href="#trading"  class="drawer-link">Trading</a></li>
+      <li><a href="#projects" class="drawer-link">Projects</a></li>
+      <li><a href="#contact"  class="drawer-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-badge reveal">
+        <span class="badge-dot pulse"></span>
+        Available for Collaboration
+      </div>
+      <h1 class="hero-name reveal">
+        <span class="name-line">Saroj</span>
+        <span class="name-line accent-text">Yadav</span>
+      </h1>
+      <p class="hero-titles reveal">
+        <span class="title-chip">Engineer</span>
+        <span class="title-sep">·</span>
+        <span class="title-chip">Security Enthusiast</span>
+        <span class="title-sep">·</span>
+        <span class="title-chip">Forex &amp; Crypto Trader</span>
+      </p>
+      <p class="hero-sub reveal">
+        Undergraduate Computer Engineering student at Tribhuvan University.<br>
+        I build systems, break vulnerabilities, and read markets.
+      </p>
+      <div class="hero-terminal reveal">
+        <span class="t-prompt">saroj@yadav:~$</span>
+        <span id="typewriter" class="t-text"></span>
+        <span class="t-cursor"></span>
+      </div>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact"  class="btn btn-outline">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ========== STATS BAND ========== -->
+  <div class="stats-band">
+    <div class="stats-container">
+      <div class="stat-item reveal">
+        <span class="stat-num">3+</span>
+        <span class="stat-label">Years in Tech</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal">
+        <span class="stat-num">10+</span>
+        <span class="stat-label">Projects Built</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal">
+        <span class="stat-num">2+</span>
+        <span class="stat-label">Years Trading</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item reveal">
+        <span class="stat-num">∞</span>
+        <span class="stat-label">Things to Learn</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">The Person Behind<br><em>the Code</em></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-inner">SY</div>
+          </div>
+          <div class="about-meta-list">
+            <div class="meta-row">
+              <span class="meta-key">University</span>
+              <span class="meta-val">Tribhuvan University (TU)</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-key">Degree</span>
+              <span class="meta-val">B.E. Computer Engineering</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-key">Location</span>
+              <span class="meta-val">Nepal</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-key">Focus</span>
+              <span class="meta-val">Security · Markets · Systems</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p>
+            I'm a disciplined, analytical thinker who prefers depth over breadth.
+            My academic foundation in Computer Engineering is complemented by
+            intensive self-study in cybersecurity, Linux systems, and financial markets.
+          </p>
+          <p>
+            I operate with a security mindset — whether I'm analyzing a network, reading
+            a market chart, or debugging a kernel module. Every system has patterns,
+            and every pattern has an edge worth understanding.
+          </p>
+          <blockquote class="about-quote">
+            "The most powerful skill is the ability to learn any system faster than everyone else."
+          </blockquote>
+          <p>
+            I'm quiet by nature, highly selective about where I invest my attention,
+            and comfortable spending hours alone with a terminal and a problem.
+            That's not a weakness — it's the foundation of how I build real skill.
+          </p>
+          <div class="about-tags">
+            <span class="atag">Disciplined</span>
+            <span class="atag">Analytical</span>
+            <span class="atag">Self-taught</span>
+            <span class="atag">Strategic</span>
+            <span class="atag">Fast Learner</span>
+            <span class="atag">Security Mindset</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Technical Skills</span>
+        <h2 class="section-title">What I Know &amp;<br><em>What I Build</em></h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">💻</div>
+          <h3 class="skill-card-title">Programming</h3>
+          <div class="skill-bars">
+            <div class="bar-row">
+              <span class="bar-label">Python</span>
+              <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+              <span class="bar-pct">85%</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">C / C++</span>
+              <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+              <span class="bar-pct">75%</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">HTML / CSS</span>
+              <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+              <span class="bar-pct">80%</span>
+            </div>
+            <div class="bar-row">
+              <span class="bar-label">JavaScript</span>
+              <div class="bar-track"><div class="bar-fill" data-width="65"></div></div>
+              <span class="bar-pct">65%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🔐</div>
+          <h3 class="skill-card-title">Cybersecurity</h3>
+          <ul class="skill-list">
+            <li>Web Vulnerability Analysis</li>
+            <li>Penetration Testing Fundamentals</li>
+            <li>Linux Bug Hunting</li>
+            <li>OSINT Research</li>
+            <li>Network Security</li>
+            <li>Security Auditing</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🐧</div>
+          <h3 class="skill-card-title">Systems & OS</h3>
+          <ul class="skill-list">
+            <li>Advanced Linux User</li>
+            <li>Terminal-First Workflow</li>
+            <li>Shell Scripting (Bash)</li>
+            <li>System Debugging</li>
+            <li>OS Internals</li>
+            <li>Process & Memory Management</li>
+          </ul>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🧠</div>
+          <h3 class="skill-card-title">Analytical</h3>
+          <ul class="skill-list">
+            <li>Technical Research</li>
+            <li>Problem Decomposition</li>
+            <li>Security Mindset</li>
+            <li>Market Analysis</li>
+            <li>Automation Design</li>
+            <li>Independent Learning</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TOOLS ========== -->
+  <section id="tools" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Tools & Technologies</span>
+        <h2 class="section-title">My Daily<br><em>Arsenal</em></h2>
+      </div>
+      <div class="tools-grid reveal">
+        <div class="tool-pill">
+          <span class="tool-emoji">🐧</span>
+          <span>Linux</span>
+        </div>
+        <div class="tool-pill">
+          <span class="tool-emoji">🐍</span>
+          <span>Python</span>
+        </div>
+        <div class="tool-pill">
+          <span class="tool-emoji">⚙️</span>
+          <span>C / C++</span>
+        </div>
+        <div class="tool-pill">
+          <span class="tool-emoji">🌐</span>
+          <span>HTML / CSS</span>
+        </div>
+        <div class="tool-pill">
+          <span class="tool-emoji">🔐</span>
+          <span>Burp Suite</span>
+        </div>
+        <div class="tool-pill">
+          <span class="tool-emoji">💉</span>
+          <span>Metasploit</span>
+        </div>
+        <div class="tool-pill">
+          <span class="tool-emoji">🖥️</span>
+          <span>Terminal</span>
+        </div>
+        <div class="tool-pill">
+          <span class="tool-emoji">🔍</span>
+          <span>OSINT Tools</span>
+        </div>
+        <div class="tool-pill">
+          <span class="tool-emoji">📡</span>
+          <span>Networking</span>
+        </div>
+        <div class="tool-pill">
+          <span class="tool-emoji">🐚</span>
+          <span>Bash / Shell</span>
+        </div>
+        <div class="tool-pill">
+          <span class="tool-emoji">📊</span>
+          <span>TradingView</span>
+        </div>
+        <div class="tool-pill">
+          <span class="tool-emoji">🐙</span>
+          <span>Git / GitHub</span>
+        </div>
+        <div class="tool-pill">
+          <span class="tool-emoji">🔒</span>
+          <span>Wireshark</span>
+        </div>
+        <div class="tool-pill">
+          <span class="tool-emoji">📝</span>
+          <span>Vim / Neovim</span>
+        </div>
+        <div class="tool-pill">
+          <span class="tool-emoji">🗄️</span>
+          <span>MySQL</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TRADING ========== -->
+  <section id="trading" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Trading Experience</span>
+        <h2 class="section-title">Markets Are<br><em>Just Systems</em></h2>
+      </div>
+      <div class="trading-layout">
+        <div class="trading-text reveal">
+          <p>
+            I approach Forex and cryptocurrency markets through the same lens I use for
+            systems analysis: find the rules, understand the edge cases, and execute with
+            discipline. Markets reward analytical thinking and punish emotional decision-making.
+          </p>
+          <p>
+            My trading is built on technical analysis, market structure reading, and
+            risk management. I don't predict — I wait for high-probability setups and
+            manage position size so losses are survivable and profits compound.
+          </p>
+          <p>
+            Trading and cybersecurity share a core: both require patience, pattern recognition,
+            and the ability to act on incomplete information while controlling risk.
+          </p>
+          <div class="trading-markets">
+            <div class="market-badge">📈 Forex</div>
+            <div class="market-badge">₿ Cryptocurrency</div>
+            <div class="market-badge">📊 Technical Analysis</div>
+          </div>
+        </div>
+        <div class="trading-cards">
+          <div class="t-card reveal">
+            <div class="t-card-icon">📉</div>
+            <h4>Market Analysis</h4>
+            <p>Price action, market structure, multi-timeframe confluence, and volume analysis.</p>
+          </div>
+          <div class="t-card reveal">
+            <div class="t-card-icon">📐</div>
+            <h4>Strategy Development</h4>
+            <p>Rule-based systems with defined entries, exits, and invalidation criteria.</p>
+          </div>
+          <div class="t-card reveal">
+            <div class="t-card-icon">🛡️</div>
+            <h4>Risk Management</h4>
+            <p>Position sizing, max drawdown limits, and capital preservation first.</p>
+          </div>
+          <div class="t-card reveal">
+            <div class="t-card-icon">🧠</div>
+            <h4>Market Psychology</h4>
+            <p>Understanding crowd behavior and sentiment cycles to spot exploitable patterns.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Projects</span>
+        <h2 class="section-title">Things I've<br><em>Built</em></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <span class="project-num">01</span>
+            <div class="project-links">
+              <a href="#" title="GitHub" class="proj-link">⬡ GitHub</a>
+            </div>
+          </div>
+          <div class="project-icon-wrap">🛡️</div>
+          <h3 class="project-title">Linux Security Toolkit</h3>
+          <p class="project-desc">
+            A collection of Bash and Python scripts for Linux system hardening,
+            automated log analysis, and local environment security auditing.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">Python</span>
+            <span class="ptag">Bash</span>
+            <span class="ptag">Linux</span>
+            <span class="ptag">Security</span>
+          </div>
+          <div class="project-status in-dev">● In Development</div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <span class="project-num">02</span>
+            <div class="project-links">
+              <a href="#" title="GitHub" class="proj-link">⬡ GitHub</a>
+            </div>
+          </div>
+          <div class="project-icon-wrap">🔍</div>
+          <h3 class="project-title">Bug Hunting Research</h3>
+          <p class="project-desc">
+            Systematic research into web application logic flaws and Linux edge cases.
+            Documents vulnerability patterns with full reproduction steps.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">Burp Suite</span>
+            <span class="ptag">Metasploit</span>
+            <span class="ptag">OSINT</span>
+          </div>
+          <div class="project-status ongoing">● Ongoing</div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <span class="project-num">03</span>
+            <div class="project-links">
+              <a href="#" title="GitHub" class="proj-link">⬡ GitHub</a>
+            </div>
+          </div>
+          <div class="project-icon-wrap">🤖</div>
+          <h3 class="project-title">Python Automation Suite</h3>
+          <p class="project-desc">
+            Modular automation tools for research workflows — web scraping,
+            data parsing, file processing, and system monitoring scripts.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">Python</span>
+            <span class="ptag">Automation</span>
+            <span class="ptag">Scripting</span>
+          </div>
+          <div class="project-status active">● Active</div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <span class="project-num">04</span>
+            <div class="project-links">
+              <a href="#" title="GitHub" class="proj-link">⬡ GitHub</a>
+            </div>
+          </div>
+          <div class="project-icon-wrap">📡</div>
+          <h3 class="project-title">Network Monitor Tool</h3>
+          <p class="project-desc">
+            C-based packet analysis utility for monitoring local network traffic,
+            detecting anomalies, and logging connection metadata in real-time.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">C</span>
+            <span class="ptag">Networking</span>
+            <span class="ptag">Linux</span>
+          </div>
+          <div class="project-status planned">● Planned</div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <span class="project-num">05</span>
+            <div class="project-links">
+              <a href="#" title="GitHub" class="proj-link">⬡ GitHub</a>
+            </div>
+          </div>
+          <div class="project-icon-wrap">🌐</div>
+          <h3 class="project-title">Web Security Scanner</h3>
+          <p class="project-desc">
+            Lightweight Python-based scanner to detect common web vulnerabilities
+            including XSS, SQLi, and misconfigured headers across target domains.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">Python</span>
+            <span class="ptag">Web Security</span>
+            <span class="ptag">OWASP</span>
+          </div>
+          <div class="project-status in-dev">● In Development</div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-top">
+            <span class="project-num">06</span>
+            <div class="project-links">
+              <a href="#" title="GitHub" class="proj-link">⬡ GitHub</a>
+            </div>
+          </div>
+          <div class="project-icon-wrap">📊</div>
+          <h3 class="project-title">Trading Journal App</h3>
+          <p class="project-desc">
+            Personal trading journal built with Python to log trades, analyze win rate,
+            risk/reward ratios, and visualize performance over time.
+          </p>
+          <div class="project-tags">
+            <span class="ptag">Python</span>
+            <span class="ptag">Data Analysis</span>
+            <span class="ptag">Trading</span>
+          </div>
+          <div class="project-status active">● Active</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LEARNING ========== -->
+  <section id="learning" class="section section-alt">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Learning & Research</span>
+        <h2 class="section-title">Always<br><em>Studying</em></h2>
+      </div>
+      <p class="learning-intro reveal">
+        Continuous learning is not a habit — it's my identity. Every day is an opportunity to go deeper
+        into one of these four domains that define my professional focus.
+      </p>
+      <div class="learning-grid">
+        <div class="learn-card reveal">
+          <div class="learn-num">01</div>
+          <div class="learn-icon">🔐</div>
+          <h3>Cybersecurity</h3>
+          <p>Penetration testing methodology, CVE analysis, web app security, hands-on CTF competitions, and vulnerability research.</p>
+          <div class="learn-progress">
+            <div class="lp-fill" style="width:78%"></div>
+          </div>
+        </div>
+        <div class="learn-card reveal">
+          <div class="learn-num">02</div>
+          <div class="learn-icon">🐧</div>
+          <h3>Systems & OS</h3>
+          <p>Linux kernel internals, memory management, process scheduling, system calls, and low-level C/C++ programming.</p>
+          <div class="learn-progress">
+            <div class="lp-fill" style="width:72%"></div>
+          </div>
+        </div>
+        <div class="learn-card reveal">
+          <div class="learn-num">03</div>
+          <div class="learn-icon">📈</div>
+          <h3>Financial Markets</h3>
+          <p>Market microstructure, technical analysis, institutional order flow, Forex and crypto trading systems, risk frameworks.</p>
+          <div class="learn-progress">
+            <div class="lp-fill" style="width:80%"></div>
+          </div>
+        </div>
+        <div class="learn-card reveal">
+          <div class="learn-num">04</div>
+          <div class="learn-icon">💻</div>
+          <h3>Programming</h3>
+          <p>Algorithms, data structures, Python tooling, systems programming in C/C++, automation, and web fundamentals.</p>
+          <div class="learn-progress">
+            <div class="lp-fill" style="width:83%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="contact-wrapper reveal">
+        <div class="contact-left">
+          <span class="section-tag">Contact</span>
+          <h2 class="contact-heading">
+            Let's Build<br><em>Something.</em>
+          </h2>
+          <p class="contact-sub">
+            I'm selective with my time, but open to meaningful conversations
+            around cybersecurity, trading, systems, or collaborative projects.
+          </p>
+          <div class="contact-socials">
+            <a href="https://github.com/CodeBySaroj" target="_blank" class="social-link">
+              <span class="social-icon">🐙</span>
+              <div>
+                <span class="social-platform">GitHub</span>
+                <span class="social-handle">https://github.com/CodeBySaroj</span>
+              </div>
+              <span class="social-arrow">→</span>
+            </a>
+            <a href="mailto:mrsarojyadav00@gmail.com" class="social-link">
+              <span class="social-icon">✉️</span>
+              <div>
+                <span class="social-platform">Email</span>
+                <span class="social-handle">mrsarojyadav00@gmail.com</span>
+              </div>
+              <span class="social-arrow">→</span>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" class="social-link">
+              <span class="social-icon">💼</span>
+              <div>
+                <span class="social-platform">LinkedIn</span>
+                <span class="social-handle">linkedin.com/in/sarojyadav</span>
+              </div>
+              <span class="social-arrow">→</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="Collaboration / Security / Trading" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              Send Message →
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-dot"></span>Saroj Yadav
+        <span class="footer-sub">Computer Engineering · Tribhuvan University</span>
+      </div>
+      <p class="footer-copy">© 2025 Saroj Yadav. All rights reserved.</p>
+      <a href="#hero" class="back-to-top">↑ Back to top</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
